@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>LuxStroy - ремонт и дизайн квартир, домов в Москве</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230407002024">
+	<link rel="shortcut icon" href="img/favicon.svg">
+	<meta name="theme-color" content="#2c2c2c">
+	<meta name="description" content="LuxStroy - дизайн и ремонт в Москве">
+	<meta name="keywords" content="Строительство, ремонт, дизайн, отделка">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="header__container">
+				<div class="header__main">
+					<a href="index.html" class="header__logo" title="LuxStroy">
+						<svg width="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1047 612">
+							<path d="m253.9 1.9-2.4 1.9-.2 118.9-.3 118.8h-17.5l-.3-117.9c-.2-108-.3-118.1-1.9-119.8-2.1-2.4-5.8-2.3-8.3.2-2 2-2 3.3-2 124.1 0 82.2.3 122.7 1 124 1 1.9 3 1.9 79.3 1.9 59.6 0 78.6-.3 79.5-1.2 2-2 1.5-8.6-.7-9.8-1.3-.6-21.6-1-59-1H264V123c0-117.7 0-119-2-121-2.5-2.5-5.1-2.5-8.1-.1zM398 2c-2 2-2 2.8-1.8 102.3l.3 100.2 2.7 7.1c6.7 18.2 19.2 31 37.5 38.7l7.8 3.2H471c25 0 26.8-.1 32.4-2.2 15.5-5.9 28.6-17.5 35.6-31.5 7.2-14.6 6.9-10.1 7-118.6C546 5.3 546 4 544 2c-2.5-2.5-5.1-2.5-8.1-.1l-2.4 1.9-.5 99.9-.5 99.8-4.3 8.9c-7.1 14.7-18.3 24.1-34 28.1-7.7 2.1-37.7 2.1-45.4 0-9.9-2.5-16.9-6.6-24.6-14.1-8.3-8.2-13.4-17.8-15.1-28.5-.7-4.1-1.1-39.9-1.1-100.2C408 5.3 408 4 406 2c-2.6-2.6-5.5-2.5-8 0zM595.7 3.8c-3.5 3.8-4.1 2.8 17.8 33.2 7.7 10.7 14.7 20.5 15.5 21.7.8 1.2 11 15.4 22.5 31.4 35.4 49.2 34.9 48.4 33.9 50.1-.8 1.3-24.4 32.6-33.4 44.3-24.7 32-45 59.7-45 61.4 0 2.6 3.4 6.1 5.9 6.1 3 0 4.8-2.1 23.2-26.5 9.5-12.7 20.4-27.1 24.2-32 3.8-5 12.8-16.8 19.9-26.3 7.2-9.4 13.3-17.2 13.7-17.2.5 0 18.7 25.1 31.2 42.8 1.4 2 25.4 35.6 53.4 74.7 57 79.6 84.9 118.5 143.3 200.2l40.2 56.2v41.3c0 45.5 0 45.8 5.9 45.8 6.2 0 6.1.8 6.1-47.4v-43.8l-11.2-15.6c-6.2-8.6-12-16.6-12.8-17.9-.8-1.2-12.6-17.7-26.1-36.5-13.5-18.9-35.5-49.6-48.9-68.3-47.6-66.4-130.6-182.3-145-202.5-8.1-11.3-36.4-50.9-63-88s-51.1-71.3-54.4-76c-3.3-4.7-6.9-9.5-8-10.8-2.4-2.7-6.7-2.9-8.9-.4zM787.4 2.8c-.6.4-8 9.7-16.5 20.6-8.5 10.9-17.4 22.5-19.9 25.7-2.5 3.2-7.7 10-11.7 15.1-3.9 5.1-12.6 16.3-19.2 24.8-8 10.3-12.1 16.3-12.1 18 0 1.6 4.9 9.4 13.8 22 19.2 27.1 100.3 141.7 107.5 152 3.3 4.7 8.1 11.4 10.6 15 2.5 3.6 7 10 10.1 14.2 3 4.2 8.2 11.6 11.5 16.3 3.3 4.7 7.1 10.1 8.5 12 1.4 1.8 5.9 8.2 10.1 14.2 62 87.8 81.4 115.2 83.2 117.1 4.6 5 6.7 3.2 21.1-18 6.4-9.5 14.5-21.4 18-26.3 3.4-5 11.5-16.9 18.1-26.5 11.9-17.6 14.5-21.3 22.4-32.7 2.7-3.8 4.1-7 3.9-8.4-.4-3-4.7-6-7.5-5.3-1.3.4-6.1 6.4-12.8 16.2-5.8 8.7-13.4 19.7-16.8 24.7-3.4 4.9-14 20.5-23.6 34.5-9.6 14-17.7 25.9-18.1 26.3-.4.5-3.1-2.5-5.9-6.5-8.1-11.3-38.5-54.3-45.2-63.8-3.3-4.7-8.8-12.6-12.4-17.5-3.5-5-8.9-12.6-12-17-3.1-4.4-7.7-11-10.3-14.6-2.6-3.7-18-25.5-34.3-48.5-16.3-23.1-46.2-65.3-66.4-93.9-20.3-28.6-38.9-54.9-41.4-58.5-5.4-7.7-9.1-12.9-14.8-20.9l-4.1-5.8 21.6-28c12-15.4 26-33.5 31.2-40.2 5.2-6.8 12.2-15.8 15.6-20 7.2-9 8.2-11.3 6-14.6-1.6-2.5-5.8-3.4-8.2-1.7zM73.8 357.5c-23.1 3.6-42.8 14.5-54.5 30-7.1 9.3-9.4 16.3-10 29.8-.7 13.1 1.1 21 6.7 30.7 11.1 19.1 30.6 29.5 68.3 36.6 21.6 4 46.2 11.5 57.8 17.5 10.1 5.3 18.7 13.1 22.9 21 2.8 5.2 3.3 7.5 3.8 14.8 1 18.4-5.5 32.5-20.3 43.7-20.1 15.4-49.6 20.1-79.5 12.7-14.1-3.5-33.5-13.7-49.6-26-11.2-8.6-11.8-8.9-14.8-7.5-1.5.6-3.1 2.3-3.8 3.6-1.5 3.4.3 6 9 13.2C29 593.4 49.6 603.4 72.9 608c15.8 3.1 37.9 2.5 52.1-1.4 30.6-8.6 50.3-26.9 55.4-51.8 2-9.7 2-16.8 0-26.5-3.4-16.4-13-28.2-30.4-37.2-10.1-5.3-22.1-9-49.5-15.6-39.4-9.4-47.3-12-59.7-20-11.5-7.5-18-18.1-19.4-31.7-2.6-25.9 16.6-46.2 50.7-53.3 9.3-2 29.8-1.9 39.4 0 14.6 3.1 29.9 9.1 42.2 16.6 14.4 8.8 12.8 8.2 16.2 6.4 4.4-2.2 4.3-6.9-.1-11.2-11.5-10.9-37.7-21.4-61.7-24.7-13.2-1.9-22.5-1.9-34.3-.1zM211.6 358.1c-3.1 2.5-3.4 6.1-.6 8.9 2 2 3.3 2 81.5 2s79.5 0 81.5-2c2.8-2.8 2.5-6.4-.6-8.9-2.6-2.1-3.3-2.1-80.9-2.1-77.6 0-78.3 0-80.9 2.1zM431 356.7c-4.1 1.5-4-1.4-4 126.3 0 136.1-.5 127 6.5 127s6.5 8.7 6.5-122.7V369h17v235.1l2.5 2.4c2.9 3 5.4 3.2 8.3.5l2.2-2.1V504l26.6.2 26.7.3 18.1 39.5c10 21.8 19.6 42.9 21.5 47 8.8 19.4 9 19.7 15.2 18.8 4.2-.6 4.7-4.7 1.4-12.5-4.6-11-46.4-101.5-48-104L530 491h-59v-18h29.3c32.4 0 37.8-.7 48.7-5.9 8.9-4.3 15.1-9.1 20-15.3 15.9-20 17.9-47.1 5.3-68.1-7-11.5-19-20.6-33.3-25.3-4.9-1.6-10.7-1.8-57-2-28.3-.2-52.2-.1-53 .3zm112.3 16.5c12.7 6.1 21.9 16.9 25.2 29.4 5.6 21.4-4.9 43.5-25.2 53.2l-7.8 3.7-32.7.3-32.8.3v-91.2l32.8.3 32.7.3 7.8 3.7z" />
+							<path d="M724 357.1c-20.6 1.9-43.4 10.8-62 24.3-8.5 6.1-23.1 21.3-29 30-7.6 11.4-14.8 27.2-18.3 40.6-2.9 10.9-3.1 12.5-3.1 31-.1 18 .1 20.3 2.6 30.1 7.8 30.7 27.1 58.4 52.4 75.2 16 10.6 28.5 15.8 47.4 19.7 9.1 1.9 12.7 2.1 27.5 1.7 12.6-.4 19.2-1.1 25.5-2.6 41.6-10.4 75.4-40.4 89.9-79.9 9.8-26.4 10.1-59 1-85-11.6-32.8-33.7-57.7-64.4-72.7-21.7-10.7-44.7-14.8-69.5-12.4zm32.9 13.4c16.2 3.1 31.2 9.2 44.6 18 7.6 5 21.3 18.1 27.1 25.9 26.4 35 30.8 80.8 11.6 119.1-8 16.1-21.4 32.1-35.2 42.2-12.8 9.3-29 16.5-45 19.9-12.2 2.6-33.4 2.4-46-.3-43.8-9.7-78.2-44-88.1-88-2.8-12.6-3-33.8-.5-45.8 5.1-23.4 15.4-42.4 32.1-59.1 16.4-16.3 38.4-27.9 60.8-31.9 10.1-1.8 28.8-1.8 38.6 0zM211.8 387.3c-2.6 2-3.3 6.3-1.4 9.2l1.6 2.5 37.3.2 37.2.3.3 103.4c.2 94.5.4 103.6 1.9 105.3 1.9 2.1 6.2 2.4 8.6.6 1.6-1.2 1.7-8.9 2-105.3l.2-104 36.9-.2c33-.2 37.1-.4 38.7-1.9 2.5-2.2 2.4-6.9-.1-9.4-2-2-3.3-2-81.7-2-63.3.1-80.1.3-81.5 1.3z" />
+						</svg>
+					</a>
+					<div class="header__location-info">
+						<svg class="header__geo-icon" width="50" height="75" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+							<path d="M300 0C134.325 0 0 134.325 0 300C0 365.237 21.3875 425.1 56.9375 474.125C57.575 475.3 57.675 476.613 58.4 477.738L258.4 777.738C267.675 791.65 283.3 800 300 800C316.7 800 332.325 791.65 341.6 777.738L541.6 477.738C542.337 476.613 542.425 475.3 543.062 474.125C578.612 425.1 600 365.237 600 300C600 134.325 465.675 0 300 0ZM300 400C244.775 400 200 355.225 200 300C200 244.775 244.775 200 300 200C355.225 200 400 244.775 400 300C400 355.225 355.225 400 300 400Z" />
+						</svg>
+						<div class="header__adress">Адрес: г.Москва, ул.Лётная 24Б</div>
+						<div class="header__work-time">Время работы: Пн-Пт, 9.00 - 18.00</div>
+					</div>
+					<a href="tel:796324677774" class="header__phone">+ 7 963 246-77-77</a>
+				</div>
+				<ul class="header__menu">
+					<li class="header__menu-item"><a data-goto-top="80" data-goto=".page" href="#" class="header__menu-link">О компании</a></li>
+					<li class="header__menu-item"><a data-goto-top="80" data-goto=".portfolio" href="#" class="header__menu-link">Портфолио</a></li>
+					<li class="header__menu-item"><a data-goto-top="80" data-goto=".advantages" href="#" class="header__menu-link">Преимущества</a></li>
+					<li class="header__menu-item"><a data-goto-top="80" data-goto=".price" href="#" class="header__menu-link">Цены</a></li>
+					<li class="header__menu-item"><a data-goto-top="80" data-goto=".renovation" href="#" class="header__menu-link">Контакты</a></li>
+				</ul>
+				<button hidden title="Menu" type="button" class="header__burger icon-menu"><span></span></button>
+			</nav>
+		</header>
+		<main class="page">
+			<h1 hidden>LuxStroy - ремонт и дизайн квартир, домов в Москве</h1>
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__content">
+						<h2 class="main__title">Постройте свою мечту вметсте с нами</h2>
+						<div class="main__text">
+							<p>Наша команда занимается ремонтом жилых и комерчиских помещений 15 лет. В основе нашей компании лежат такие понятия как “качество”, “ доступность”, “отвественность” и “честность”.</p>
+							<p>С нами вы сэкономите миллиарды нервных клеток и миллионы рублей.</p>
+						</div>
+					</div>
+					<form data-popup-message="#form-popup" data-dev action="#" class="main__form form">
+						<h3 class="form__title">Заказать обратный звонок</h3>
+						<input data-required autocomplete="off" type="text" name="form[]" placeholder="Имя" class="form__input">
+						<input data-required data-phone-pattern autocomplete="off" type="text" name="form[]" placeholder="Телефон" class="form__input">
+						<button type="submit" class="form__button">Позвонить мне</button>
+					</form>
+				</div>
+			</section>
+			<section class="page__portfolio portfolio">
+				<div class="portfolio__container">
+					<h2 class="portfolio__title h2">Портфолио</h2>
+					<div class="portfolio__slider swiper">
+						<div class="portfolio__arrows">
+							<button type="button" class="portfolio__arrow-prev" title="Предыдущий слайд">
+								<svg viewBox="-4.5 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413" fill-rule="evenodd" />
+								</svg>
+							</button>
+							<button type="button" class="portfolio__arrow-next" title="Следующий слайд">
+								<svg viewBox="-4.5 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M.366 19.708c.405.39 1.06.39 1.464 0l8.563-8.264a1.95 1.95 0 0 0 0-2.827L1.768.292A1.063 1.063 0 0 0 .314.282a.976.976 0 0 0-.011 1.425l7.894 7.617a.975.975 0 0 1 0 1.414L.366 18.295a.974.974 0 0 0 0 1.413" fill-rule="evenodd" />
+								</svg>
+							</button>
+						</div>
+						<div class="portfolio__wrapper swiper-wrapper">
+							<div class="portfolio__slide swiper-slide">
+								<div class="portfolio__slide-body">
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/4.webp" type="image/webp"><img src="img/gallery/4.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio__slide swiper-slide">
+								<div class="portfolio__slide-body">
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/5.webp" type="image/webp"><img src="img/gallery/5.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/6.webp" type="image/webp"><img src="img/gallery/6.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/7.webp" type="image/webp"><img src="img/gallery/7.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/8.webp" type="image/webp"><img src="img/gallery/8.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio__slide swiper-slide">
+								<div class="portfolio__slide-body">
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/9.webp" type="image/webp"><img src="img/gallery/9.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/10.webp" type="image/webp"><img src="img/gallery/10.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/11.webp" type="image/webp"><img src="img/gallery/11.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+									<div class="portfolio__slide-image">
+										<picture><source srcset="img/gallery/12.webp" type="image/webp"><img src="img/gallery/12.jpg" alt="Фотография" loading="lazy"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__advantages advantages">
+				<h2 class="advantages__title h2">Наши преимущества</h2>
+				<div class="advantages__content">
+					<div class="advantages__container">
+						<ul class="advantages__list">
+							<li class="advantages__item">
+								<div class="advantages__icon">
+									<svg viewBox="0 0 356 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M116.914 71.6342C125.115 82.7739 138.313 90.0191 153.175 90.0191C168.037 90.0191 181.234 82.7739 189.434 71.6342H208.757C205.657 65.7017 201.641 60.3289 196.889 55.7021C197.729 52.2731 198.182 48.694 198.182 45.0104C198.182 20.191 177.993 0 153.175 0C128.357 0 108.166 20.191 108.166 45.0087C108.166 48.6766 108.618 52.2382 109.45 55.6533C104.676 60.2923 100.641 65.6808 97.5305 71.6342H116.914ZM153.175 20.9755C166.428 20.9755 177.208 31.7561 177.208 45.0087C177.208 58.2613 166.426 69.0419 153.175 69.0419C139.921 69.0419 129.14 58.2613 129.14 45.0087C129.138 31.7561 139.921 20.9755 153.175 20.9755Z" fill="black" />
+										<path d="M153.142 163.358C187.783 163.358 215.866 135.275 215.866 100.634C215.866 100.434 215.852 100.235 215.85 100.034H90.4317C90.43 100.235 90.416 100.434 90.416 100.634C90.4178 135.275 118.501 163.358 153.142 163.358Z" fill="black" />
+										<path d="M336.522 530.537H316.87V503.359C327.046 497.512 333.311 486.002 331.868 473.606L306.129 252.706C304.921 214.291 273.2 183.351 234.542 183.351C228.693 183.351 239.838 183.351 71.7418 183.351C32.4477 183.351 0.318576 215.318 0.121582 254.613C0.121582 254.688 0.121582 254.763 0.121582 254.838L0.658518 477.183C0.696871 493.873 14.2406 507.375 30.9206 507.375C30.945 507.375 30.9694 507.375 30.9955 507.375C47.7104 507.335 61.228 493.753 61.1861 477.038L60.6492 254.84C60.6893 251.536 63.3879 248.887 66.6897 248.908C69.9916 248.928 72.6571 251.611 72.6571 254.913V473.39H72.671V763.682C72.671 783.738 88.9309 800 108.989 800C129.048 800 145.308 783.74 145.308 763.682V473.388H160.987V763.68C160.987 783.737 177.247 799.998 197.305 799.998C217.364 799.998 233.624 783.738 233.624 763.68C233.624 283.906 232.98 557.813 232.965 255.855C232.965 252.521 235.536 249.751 238.86 249.504C242.185 249.256 245.142 251.615 245.631 254.912V254.915C245.998 257.384 247.089 269.055 271.741 480.61C272.928 490.793 279.052 499.177 287.429 503.711V530.535H267.775C257.085 530.535 248.419 539.201 248.419 549.891V708.427C248.419 719.117 257.085 727.783 267.775 727.783H336.519C347.209 727.783 355.875 719.117 355.875 708.427V549.893H355.878C355.878 539.203 347.212 530.537 336.522 530.537Z" fill="black" />
+									</svg>
+								</div>
+								<h3 class="advantages__subtitle">Профессиональная<br>команда</h3>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__icon">
+									<svg viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_212_32)">
+											<path d="M666.47 574.94L500.385 408.855L635.19 274.051C678.96 284.214 726.787 272.553 760.961 238.385C798.358 201.021 808.616 147.289 792.909 100.296L729.442 163.73C706.989 186.25 669.926 185.548 646.55 162.172C623.268 138.856 622.539 101.794 644.958 79.3132L708.392 15.8793C661.5 0.0723566 607.795 10.397 570.337 47.8272C536.229 81.9013 524.608 129.723 534.799 173.565L399.994 308.336L265.251 173.593C275.414 129.79 263.693 81.9625 229.619 47.8217C192.255 10.4248 138.556 0.13358 91.5636 15.8404L154.997 79.3076C177.483 101.76 176.816 138.857 153.406 162.2C130.09 185.515 93.0942 186.211 70.547 163.791L7.10762 100.33C-8.63257 147.255 1.65867 201.027 39.1223 238.418C73.163 272.559 120.985 284.147 164.86 274.017L299.598 408.722L133.547 574.773C103.324 572.68 72.4394 582.71 49.4247 605.858C6.97961 648.236 6.97961 716.98 49.4247 759.425C91.7362 801.77 160.513 801.77 202.892 759.425C225.973 736.344 235.969 705.425 234.043 675.203L399.994 509.185L566.079 675.27C564.02 705.492 574.083 736.41 597.164 759.458C639.509 801.87 708.32 801.87 750.698 759.458C793.076 717.08 793.076 648.337 750.698 605.925C727.611 582.849 696.693 572.819 666.47 574.94ZM140.877 737.807L85.6471 723.063L70.9366 667.834L111.289 627.415L166.519 642.192L181.296 697.388L140.877 737.807ZM714.292 723.164L659.095 737.874L618.676 697.455L633.42 642.259L688.65 627.481L729.102 667.9L714.292 723.164Z" fill="#010002" />
+										</g>
+										<defs>
+											<clipPath id="clip0_212_32">
+												<rect width="800" height="800" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<h3 class="advantages__subtitle">Гарантия 3 года</h3>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__icon">
+									<svg viewBox="0 0 733 733" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M576.312 23.125L552.25 46.8749L368.188 230L142.875 4.68738C137.25 -0.625122 128.5 -0.625122 122.875 4.68738L4.4375 123.125C-0.875 128.437 -0.875 137.5 4.4375 143.125L32.2501 170.937L53.1874 150L61.9376 158.75L41.0002 179.687L69.1252 207.812L112.875 164.062L121.625 172.812L77.875 216.562L106 244.687L126.938 223.75L135.688 232.5L114.75 253.437L142.875 281.562L186.313 237.812L195.063 246.562L151.313 290L179.438 318.125L200.375 297.187L209.125 305.937L188.188 326.875L216.313 355L260.063 311.562L274.125 325.625L20.0625 579.687C13.8125 585.937 10.3751 594.375 10.3751 602.812C10.3751 602.812 5.37492 713.437 9.43742 717.5C13.4999 721.562 124.75 717.187 124.75 717.187C133.188 717.187 141.625 714.062 147.875 707.812L401.938 453.75L415.688 467.5L372.25 510.937L405.375 544.062L426.312 523.125L435.063 531.875L414.125 552.812L442.25 580.937L485.687 537.187L494.438 545.937L451 589.375L479.125 617.5L500.063 596.562L508.813 605.312L487.875 626.25L516 654.375L559.438 610.937L568.188 619.688L524.75 663.125L552.875 691.25L573.813 670.312L582.562 679.063L561.625 700L589.438 727.812C595.063 733.437 603.813 733.437 609.438 727.812L727.875 609.375C733.5 603.75 733.5 595 727.875 589.375L497.563 359.062L681.313 175.937L705.688 151.562C726.313 130.937 726.313 97.8124 705.688 77.1874L652.563 24.0624C630.375 2.49992 596.937 2.49995 576.312 23.125ZM572.875 153.75L91.6251 634.375C80.3751 624.375 57.5627 601.875 47.5627 590.312L528.813 109.687L572.875 153.75Z" fill="black" />
+									</svg>
+								</div>
+								<h3 class="advantages__subtitle">Профессиональные<br>дизайнеры</h3>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__icon">
+									<svg viewBox="0 0 660 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M423.946 0V235.294H659.24V800H0.416748V0H423.946ZM329.875 564.706H141.593V611.812H329.875V564.706ZM471.005 470.589H141.593V517.647H471.005V470.589ZM423.946 376.47H141.593V423.529H423.946V376.47ZM518.064 282.353H141.593V329.412H518.064V282.353ZM329.875 188.282H141.593V235.341H329.875V188.282Z" fill="black" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M624.864 144.01C637.522 156.621 646.464 171.774 652.205 188.245H470.981V7.02124C487.452 12.7625 502.605 21.7504 515.264 34.3625L624.864 144.01Z" fill="black" />
+									</svg>
+								</div>
+								<h3 class="advantages__subtitle">Работа по договору</h3>
+							</li>
+							<li class="advantages__item">
+								<div class="advantages__icon">
+									<svg viewBox="0 0 666 337" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M665.053 20.158V316.874C665.042 322.175 662.931 327.255 659.183 331.004C655.434 334.752 650.354 336.863 645.053 336.874H20.2106C14.9024 336.874 9.81093 334.768 6.05352 331.018C2.2961 327.269 0.179609 322.182 0.168457 316.874V20.158C0.179582 14.8571 2.29029 9.77643 6.03861 6.02812C9.78693 2.2798 14.8675 0.169084 20.1685 0.157959H645.011C650.319 0.157947 655.41 2.26376 659.168 6.01328C662.925 9.7628 665.041 14.8498 665.053 20.158ZM471.074 168.579C471.013 135.377 458.622 103.382 436.305 78.7989C413.988 54.2162 383.336 38.7986 350.295 35.5369C317.253 32.2753 284.178 41.4022 257.486 61.147C230.793 80.8919 212.386 109.847 205.834 142.396C199.282 174.945 205.053 208.767 222.028 237.302C239.003 265.836 265.97 287.049 297.7 296.825C329.43 306.601 363.66 304.244 393.75 290.21C423.84 276.176 447.645 251.466 460.547 220.874C467.536 204.327 471.116 186.541 471.074 168.579ZM387.874 173.463C395.197 181.849 399.236 192.603 399.242 203.737C399.214 211.635 397.11 219.386 393.142 226.215C389.174 233.043 383.48 238.708 376.632 242.642C369.511 247.15 361.661 250.384 353.432 252.2V267.568C353.432 271.991 351.675 276.232 348.548 279.359C345.421 282.486 341.18 284.242 336.758 284.242C332.336 284.242 328.095 282.486 324.968 279.359C321.841 276.232 320.084 271.991 320.084 267.568V252.411C314.842 251.362 309.721 249.782 304.8 247.695C297.161 244.525 290.4 239.556 285.095 233.211C283.542 231.577 282.336 229.644 281.551 227.531C280.766 225.418 280.417 223.167 280.526 220.916C280.636 218.664 281.2 216.458 282.186 214.43C283.173 212.403 284.56 210.597 286.264 209.121C287.968 207.645 289.953 206.53 292.1 205.843C294.248 205.156 296.512 204.912 298.756 205.125C301 205.338 303.178 206.004 305.158 207.082C307.138 208.161 308.878 209.63 310.274 211.4C312.121 213.692 314.488 215.511 317.179 216.705C320.104 217.99 323.151 218.978 326.274 219.653C329.527 220.274 332.819 220.668 336.126 220.832C344.018 220.851 351.764 218.711 358.526 214.642C365.937 209.842 365.937 205.716 365.937 203.695C365.896 200.644 364.778 197.706 362.779 195.4C360.637 192.986 358.104 190.95 355.284 189.379C352.353 187.874 349.24 186.756 346.021 186.053C343.043 185.441 340.009 185.145 336.968 185.168C331.975 185.178 326.989 184.769 322.063 183.947C315.392 182.847 308.921 180.761 302.863 177.758C295.817 174.238 289.602 169.257 284.632 163.147C277.752 154.854 273.932 144.448 273.811 133.674C273.97 125.503 276.23 117.512 280.375 110.469C284.52 103.426 290.408 97.5693 297.474 93.4632C304.44 89.1718 312.086 86.0964 320.084 84.3685V69.5474C320.084 65.1253 321.841 60.8843 324.968 57.7574C328.095 54.6304 332.336 52.8737 336.758 52.8737C341.18 52.8737 345.421 54.6304 348.548 57.7574C351.675 60.8843 353.432 65.1253 353.432 69.5474V84.8317C358.792 86.0841 364.011 87.8757 369.011 90.179C375.442 93.0889 381.303 97.1242 386.316 102.095C389.222 105.26 390.794 109.424 390.705 113.72C390.616 118.016 388.871 122.111 385.836 125.152C382.8 128.193 378.708 129.945 374.412 130.042C370.116 130.139 365.949 128.574 362.779 125.674C360.614 123.55 358.091 121.826 355.326 120.579C352.316 119.169 349.17 118.069 345.937 117.295L344.968 117.084C342.427 116.435 339.835 115.999 337.221 115.779C329.529 115.763 321.971 117.798 315.326 121.674C313.032 122.782 311.069 124.474 309.636 126.58C308.202 128.687 307.347 131.133 307.158 133.674C307.332 136.773 308.515 139.73 310.526 142.095C312.507 144.54 314.973 146.547 317.768 147.99C320.858 149.493 324.148 150.543 327.537 151.105C330.655 151.608 333.81 151.847 336.968 151.821C342.402 151.809 347.822 152.374 353.137 153.505C359.288 154.85 365.234 157.002 370.821 159.905C377.267 163.373 383.042 167.965 387.874 173.463Z" fill="black" />
+									</svg>
+								</div>
+								<h3 class="advantages__subtitle">Поэтапная<br>оплата</h3>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page__price price">
+				<h2 class="price__title h2">Цены</h2>
+				<div class="price __container">
+					<ul class="price__list">
+						<li class="price__item">
+							<h3 class="price__sub-title">BASIC</h3>
+							<ul class="price__sub-list">
+								<li class="price__sub-item">Предчистовая отделка</li>
+								<li class="price__sub-item">Укладка плитки в зоне санузлов кухни</li>
+								<li class="price__sub-item">Укладка ламината / кварцвинила</li>
+								<li class="price__sub-item">Покраска стен / поклейка обоев</li>
+								<li class="price__sub-item">Потолок натяжного типа</li>
+							</ul>
+							<div class="price__price">от 12 000 ₽</div>
+							<a href="tel:79775864944" class="price__button">Купить</a>
+						</li>
+						<li class="price__item">
+							<h3 class="price__sub-title">COMFORT</h3>
+							<ul class="price__sub-list">
+								<li class="price__sub-item">Предчистовая отделка</li>
+								<li class="price__sub-item">Укладка плитки в зоне санузлов кухни</li>
+								<li class="price__sub-item">Укладка паркета / инженерной доски</li>
+								<li class="price__sub-item">Покраска молдингов</li>
+								<li class="price__sub-item">Потолок из гипсокартона</li>
+							</ul>
+							<div class="price__price">от 15 000 ₽</div>
+							<a href="tel:79775864944" class="price__button">Купить</a>
+						</li>
+						<li class="price__item">
+							<h3 class="price__sub-title">BUSINESS</h3>
+							<ul class="price__sub-list">
+								<li class="price__sub-item">Предчистовая отделка</li>
+								<li class="price__sub-item">Укладка плитки в любых помещениях</li>
+								<li class="price__sub-item">Укладка паркета / инженерной доск</li>
+								<li class="price__sub-item">Поклейка молдингов / лепнины</li>
+								<li class="price__sub-item">Декоративная штукатурка / 3D панели</li>
+								<li class="price__sub-item">Многоуровневые гипсокартонные потолки</li>
+								<li class="price__sub-item">Декоративные рейки / шумоизоляция</li>
+							</ul>
+							<div class="price__price">от 18 000 ₽</div>
+							<a href="tel:79775864944" class="price__button">Купить</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+
+
+			<section class="page__callback callback">
+				<div class="callback__container">
+					<h2 class="callback__title h2">Вызов специалиста</h2>
+					<form data-popup-message="#form-popup" data-dev action="#" class="callback__form form">
+						<h3 class="form__title">Бесплатный замер</h3>
+						<input data-required autocomplete="off" type="text" name="form[]" placeholder="Имя" class="form__input">
+						<input data-required data-phone-pattern autocomplete="off" type="text" name="form[]" placeholder="Телефон" class="form__input">
+						<button type="submit" class="form__button">Оставить заявку</button>
+					</form>
+				</div>
+			</section>
+			<section class="page__staff staff">
+				<div class="staff__container">
+					<h2 class="staff__title h2">Наша команда</h2>
+					<div class="staff__slider swiper">
+						<div class="staff__wrapper swiper-wrapper">
+							<div class="staff__slide swiper-slide">
+								<div class="staff__image"><picture><source srcset="img/staff/1.webp" type="image/webp"><img src="img/staff/1.jpg" alt="Сотрудник компании" loading="lazy"></picture></div>
+								<div class="staff__name">Имя фамилия</div>
+								<div class="staff__job">Должность</div>
+							</div>
+							<div class="staff__slide swiper-slide">
+								<div class="staff__image"><picture><source srcset="img/staff/1.webp" type="image/webp"><img src="img/staff/1.jpg" alt="Сотрудник компании" loading="lazy"></picture></div>
+								<div class="staff__name">Имя фамилия</div>
+								<div class="staff__job">Должность</div>
+							</div>
+							<div class="staff__slide swiper-slide">
+								<div class="staff__image"><picture><source srcset="img/staff/1.webp" type="image/webp"><img src="img/staff/1.jpg" alt="Сотрудник компании" loading="lazy"></picture></div>
+								<div class="staff__name">Имя фамилия</div>
+								<div class="staff__job">Должность</div>
+							</div>
+							<div class="staff__slide swiper-slide">
+								<div class="staff__image"><picture><source srcset="img/staff/1.webp" type="image/webp"><img src="img/staff/1.jpg" alt="Сотрудник компании" loading="lazy"></picture></div>
+								<div class="staff__name">Имя фамилия</div>
+								<div class="staff__job">Должность</div>
+							</div>
+							<div class="staff__slide swiper-slide">
+								<div class="staff__image"><picture><source srcset="img/staff/1.webp" type="image/webp"><img src="img/staff/1.jpg" alt="Сотрудник компании" loading="lazy"></picture></div>
+								<div class="staff__name">Имя фамилия</div>
+								<div class="staff__job">Должность</div>
+							</div>
+							<div class="staff__slide swiper-slide">
+								<div class="staff__image"><picture><source srcset="img/staff/1.webp" type="image/webp"><img src="img/staff/1.jpg" alt="Сотрудник компании" loading="lazy"></picture></div>
+								<div class="staff__name">Имя фамилия</div>
+								<div class="staff__job">Должность</div>
+							</div>
+							<div class="staff__slide swiper-slide">
+								<div class="staff__image"><picture><source srcset="img/staff/1.webp" type="image/webp"><img src="img/staff/1.jpg" alt="Сотрудник компании" loading="lazy"></picture></div>
+								<div class="staff__name">Имя фамилия</div>
+								<div class="staff__job">Должность</div>
+							</div>
+							<div class="staff__slide swiper-slide">
+								<div class="staff__image"><picture><source srcset="img/staff/1.webp" type="image/webp"><img src="img/staff/1.jpg" alt="Сотрудник компании" loading="lazy"></picture></div>
+								<div class="staff__name">Имя фамилия</div>
+								<div class="staff__job">Должность</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer gm">
+			<div class="footer__container">
+				<div class="footer__body">
+					<dl class="footer__contacts contacts">
+						<div class="contacts__item">
+							<dt class="contacts__dt">Телефон:</dt>
+							<dd class="contacts__dd">
+								<a href="79632467777">+7 963 246-77-77</a>
+							</dd>
+						</div>
+						<div class="contacts__item">
+							<dt class="contacts__dt">Мессенджеры:</dt>
+							<dd class="contacts__dd">
+								<ul class="contacts__socials">
+									<li class="contacts__social-item">
+										<a href="#" class="contacts__social-link" title="Whatsapp">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 495 495" xml:space="preserve">
+												<path style="fill:#1a7332" d="M173.5 383.294c22.799 12.436 48.468 18.99 74.592 18.999h.064c86.027 0 156.056-70.025 156.091-156.089.016-41.707-16.205-80.924-45.675-110.427-29.47-29.504-68.662-45.76-110.418-45.777-86.035 0-156.058 70.018-156.092 156.08-.012 27.511 7.176 54.363 20.836 78.035L90.753 405l82.747-21.706zm74.707-266.931c34.653.012 67.227 13.525 91.722 38.047 24.494 24.522 37.976 57.118 37.963 91.784-.029 71.536-58.229 129.737-129.736 129.737h-.053c-23.28-.009-46.113-6.263-66.032-18.084l-4.737-2.812-49.103 12.881 13.106-47.875-3.085-4.909c-12.987-20.656-19.846-44.529-19.836-69.044.029-71.529 58.229-129.725 129.791-129.725z" />
+												<path style="fill:green" d="M251.394 310.652c9.305 4.019 16.57 6.418 22.234 8.215 9.343 2.969 17.846 2.55 24.566 1.546 7.493-1.119 23.075-9.434 26.326-18.544 3.249-9.112 3.249-16.921 2.274-18.547-.975-1.627-3.575-2.603-7.475-4.556-3.9-1.952-23.075-11.386-26.65-12.689-3.575-1.301-6.175-1.951-8.775 1.952-2.6 3.904-10.074 12.69-12.35 15.293-2.275 2.602-4.55 2.929-8.449.976-3.9-1.952-16.467-6.07-31.364-19.358-11.595-10.342-19.422-23.114-21.697-27.018-2.275-3.904-.243-6.015 1.71-7.959 1.755-1.748 3.901-4.556 5.85-6.833 1.95-2.277 2.6-3.905 3.9-6.506 1.3-2.604.65-4.881-.325-6.833-.975-1.952-8.775-21.15-12.025-28.96-3.166-7.604-6.381-6.574-8.775-6.695-2.272-.113-4.875-.137-7.475-.137-2.6 0-6.826.976-10.4 4.88-3.575 3.905-13.65 13.341-13.65 32.537 0 19.198 13.975 37.743 15.925 40.346 1.948 2.602 27.5 41.996 66.625 58.89z" />
+												<path style="fill:#1a7332" d="M247.5 0v40H455v415H247.5v40H495V0z" />
+												<path style="fill:#1a7332" d="M40 455V40h207.5V0H0v495h247.5v-40z" />
+											</svg>
+										</a>
+									</li>
+									<li class="contacts__social-item">
+										<a href="#" class="contacts__social-link" title="Telegram">
+											<svg xmlns="http://www.w3.org/2000/svg" fill='#337eb8' viewBox="0 0 485 485">
+												<path d="m90.564 236.876 72.583 27.089 28.094 90.351c1.798 5.784 8.874 7.923 13.569 4.083l40.46-32.981a12.066 12.066 0 0 1 14.712-.412l72.975 52.981c5.023 3.65 12.142.899 13.401-5.172l53.458-257.136c1.375-6.632-5.139-12.164-11.454-9.721L90.48 220.873c-7.352 2.833-7.289 13.241.084 16.003zm96.149 12.67 141.854-87.367c2.548-1.565 5.172 1.882 2.981 3.913L214.479 274.913a24.262 24.262 0 0 0-7.522 14.522l-3.986 29.553c-.531 3.945-6.071 4.335-7.162.517l-15.337-53.891c-1.755-6.146.804-12.713 6.241-16.068z" />
+												<path d="M0 0v485h485V0H0zm455 455H30V30h425v425z" />
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</dd>
+						</div>
+						<div class="contacts__item">
+							<dt class="contacts__dt">Адрес:</dt>
+							<dd class="contacts__dd">г.Москва, ул. Лётная 24Б</dd>
+						</div>
+						<div class="contacts__item">
+							<dt class="contacts__dt">Время работы:</dt>
+							<dd class="contacts__dd">Пн – Пт, 9.00 – 18. 00</dd>
+						</div>
+						<div class="contacts__item">
+							<dt class="contacts__dt">Почта:</dt>
+							<dd class="contacts__dd">
+								<a href="email:money@luxstroy.group">money@luxstroy.group</a>
+							</dd>
+						</div>
+					</dl>
+					<ul class="footer__staff staff">
+						<li class="staff__item">
+							<picture><source data-srcset="img/staff/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  height="100" width="100" data-src="img/staff/1.jpg" class="staff__foto lazy" alt="Фото руководителя"></picture>
+							<div class="staff__name">Беляков Михаил</div>
+							<div class="staff__job">Генеральный директор</div>
+							<a href="79632467777" class="staff__phone">+7 963 246-77-77</a>
+						</li>
+						<li class="staff__item">
+							<picture><source data-srcset="img/staff/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  height="100" width="100" data-src="img/staff/1.jpg" class="staff__foto lazy" alt="Фото руководителя"></picture>
+							<div class="staff__name">Селиванов Кирилл</div>
+							<div class="staff__job">Руководитель отдела продаж</div>
+							<a href="79775864944" class="staff__phone">+7 977 586-49-44</a>
+						</li>
+					</ul>
+				</div>
+				<iframe data-watch data-watch-once class="footer__map lazy-map" title="Карта" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A84854bc3358b6f5cee6ca7e6732424d9b78f14c8f39b1a6c69955e4850a4de50&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
+			</div>
+			<div class="footer__copyright">© design and fronted by <a href="https://t.me/hz785fvq">t.me/hz785fvq</a> in 2023.</div>
+		</footer>
+	</div>
+
+	<div id="form-popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close" title="Закрыть"></button>
+				<div class="popup__text">
+					Спасибо за отправку! Мы свяжемся с Вами в ближайшее время.
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20230407002024"></script>
+
+</body>
+
+</html>
