@@ -407,6 +407,9 @@
             if (location.hash) return location.hash.replace("#", "");
         }
         let bodyLockStatus = true;
+        let bodyLockToggle = (delay = 500) => {
+            if (document.documentElement.classList.contains("lock")) bodyUnlock(delay); else bodyLock(delay);
+        };
         let bodyUnlock = (delay = 500) => {
             let body = document.querySelector("body");
             if (bodyLockStatus) {
@@ -456,6 +459,21 @@
                 };
                 var phone_inputs = document.querySelectorAll("[data-phone-pattern]");
                 for (let elem of phone_inputs) for (let ev of [ "input", "blur", "focus" ]) elem.addEventListener(ev, eventCalllback);
+            }));
+        }
+        function menuInit() {
+            if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
+                if (bodyLockStatus && e.target.closest(".icon-menu")) {
+                    bodyLockToggle();
+                    document.documentElement.classList.toggle("menu-open");
+                } else {
+                    bodyUnlock();
+                    document.documentElement.classList.remove("menu-open");
+                }
+                document.querySelector("main").addEventListener("touchmove", (() => {
+                    bodyUnlock();
+                    document.documentElement.classList.remove("menu-open");
+                }));
             }));
         }
         function menuClose() {
@@ -3974,6 +3992,28 @@
                     prevEl: ".portfolio__arrow-prev",
                     nextEl: ".portfolio__arrow-next"
                 },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 15
+                    },
+                    550: {
+                        slidesPerView: 2,
+                        spaceBetween: 15
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    992: {
+                        slidesPerView: 4,
+                        spaceBetween: 20
+                    },
+                    1500: {
+                        slidesPerView: 4,
+                        spaceBetween: 50
+                    }
+                },
                 on: {
                     afterInit: swiper => {
                         new lazyload_min({
@@ -3996,12 +4036,6 @@
             initSliders();
             previewsSliders();
         }));
-        new lazyload_min({
-            elements_selector: ".lazy",
-            class_loaded: "_lazy-loaded",
-            use_native: true,
-            threshold: 200
-        });
         new lazyload_min({
             elements_selector: ".lazy-map",
             class_loaded: "_lazy-loaded",
@@ -4184,6 +4218,7 @@
         window["FLS"] = false;
         isWebp();
         addLoadedClass();
+        menuInit();
         phoneMask();
         formFieldsInit({
             viewPass: false
